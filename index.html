@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>あなたの名前 | Web制作ポートフォリオ</title>
+  <meta name="description" content="Webサイト制作・LP制作・WordPress対応。目的から逆算して成果につながるデザインと実装を提供します。" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="あなたの名前 | Web制作ポートフォリオ" />
+  <meta property="og:description" content="Webサイト制作・LP制作・WordPress対応。目的から逆算して成果につながるデザインと実装を提供します。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOURNAME.github.io/" />
+  <meta property="og:image" content="assets/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts（CSSで指定する想定） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS（次で作る想定） -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Favicons（必要なら） -->
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- =========================
+       Header
+  ========================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="トップへ">
+        <span class="brand-mark" aria-hidden="true">◼︎</span>
+        <span class="brand-name">あなたの名前</span>
+      </a>
+
+      <nav class="site-nav" aria-label="サイト内ナビゲーション">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-label">メニュー</span>
+        </button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#works">制作実績</a></li>
+          <li><a href="#services">できること</a></li>
+          <li><a href="#process">進め方</a></li>
+          <li><a href="#about">プロフィール</a></li>
+          <li><a href="#contact" class="nav-cta">相談する</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       Main
+  ========================== -->
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="ファーストビュー">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Web制作 / LP / WordPress / 相談無料</p>
+          <h1 class="hero-title">
+            目的から逆算して、<br />
+            <span class="accent">受注・集客につながる</span><br />
+            Webサイトを作ります。
+          </h1>
+          <p class="hero-lead">
+            「見た目が良い」だけで終わらせません。導線設計・読みやすさ・表示速度まで含めて、
+            成果につながる設計で制作します。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">無料で相談する</a>
+            <a class="btn btn-ghost" href="#works">制作実績を見る</a>
+          </div>
+
+          <dl class="hero-metrics" aria-label="実績の要約">
+            <div class="metric">
+              <dt>対応</dt>
+              <dd>個人〜小規模事業</dd>
+            </div>
+            <div class="metric">
+              <dt>納品</dt>
+              <dd>GitHub Pages / WP</dd>
+            </div>
+            <div class="metric">
+              <dt>重視</dt>
+              <dd>速さ × 伝わりやすさ</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device device-desktop">
+            <div class="device-bar"></div>
+            <div class="device-screen">
+              <div class="skeleton-line w-70"></div>
+              <div class="skeleton-line w-90"></div>
+              <div class="skeleton-line w-60"></div>
+              <div class="skeleton-card-grid">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="device device-mobile">
+            <div class="device-bar"></div>
+            <div class="device-screen">
+              <div class="skeleton-line w-80"></div>
+              <div class="skeleton-line w-60"></div>
+              <div class="skeleton-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-badges" aria-label="対応領域">
+        <div class="container badges-inner">
+          <span class="badge">HTML / CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">WordPress</span>
+          <span class="badge">SEO基礎</span>
+          <span class="badge">表示速度</span>
+          <span class="badge">スマホ最適化</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section" id="works" aria-label="制作実績">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">制作実績</h2>
+          <p class="section-lead">
+            実案件・自主制作どちらでもOK。まずは「何を作れるか」が一瞬で伝わるように並べます。
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <!-- Work Card 1 -->
+          <article class="card work-card">
+            <a class="work-thumb" href="#" target="_blank" rel="noopener noreferrer" aria-label="制作実績1を開く">
+              <span class="work-thumb-label">LP / 予約導線</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">◯◯サービス LP</h3>
+              <p class="card-text">
+                課題：申込率が低い → 価値訴求の順番とCTAを再設計。スマホで読みやすい情報量に調整。
+              </p>
+              <ul class="tag-list" aria-label="使用技術">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">制作メモ</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work Card 2 -->
+          <article class="card work-card">
+            <a class="work-thumb" href="#" target="_blank" rel="noopener noreferrer" aria-label="制作実績2を開く">
+              <span class="work-thumb-label">コーポレート</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">小規模事業サイト</h3>
+              <p class="card-text">
+                信頼感を出すために「実績・人・よくある質問」を強化。更新しやすい構成で納品。
+              </p>
+              <ul class="tag-list" aria-label="使用技術">
+                <li class="tag">WordPress</li>
+                <li class="tag">設計</li>
+                <li class="tag">SEO</li>
+              </ul>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">制作メモ</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Work Card 3 -->
+          <article class="card work-card">
+            <a class="work-thumb" href="#" target="_blank" rel="noopener noreferrer" aria-label="制作実績3を開く">
+              <span class="work-thumb-label">採用 / PR</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">採用向けPRページ</h3>
+              <p class="card-text">
+                文章中心でも読ませるレイアウトに。写真が少なくても成立するデザイン設計。
+              </p>
+              <ul class="tag-list" aria-label="使用技術">
+                <li class="tag">UI</li>
+                <li class="tag">文章設計</li>
+                <li class="tag">レスポンシブ</li>
+              </ul>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+                <a class="link" href="#" target="_blank" rel="noopener noreferrer">制作メモ</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">
+          ※ここはあなたの実績に置き換える前提。リンクが未確定なら「#」のままでOK。
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-muted" id="services" aria-label="できること">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">できること</h2>
+          <p class="section-lead">
+            「見た目」だけじゃなく、目的達成のための設計と実装をセットで提供します。
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">LP制作</h3>
+              <p class="card-text">
+                申込・購入・問い合わせなど、ゴールに向けた導線を設計して作ります。
+              </p>
+              <ul class="list">
+                <li>ファーストビュー設計</li>
+                <li>CTA（行動喚起）の最適化</li>
+                <li>スマホ読了率の改善</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">Webサイト制作</h3>
+              <p class="card-text">
+                事業の信頼を積み上げるための情報設計で、伝わるサイトに整えます。
+              </p>
+              <ul class="list">
+                <li>構成提案（ページ設計）</li>
+                <li>レスポンシブ対応</li>
+                <li>表示速度・軽量化</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3 class="card-title">WordPress対応</h3>
+              <p class="card-text">
+                自分で更新できる運用を前提に、管理しやすい形で実装します。
+              </p>
+              <ul class="list">
+                <li>テーマ調整 / 軽いカスタム</li>
+                <li>固定ページ・投稿設計</li>
+                <li>基本的なSEO設定</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process" aria-label="制作の進め方">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">制作の進め方</h2>
+          <p class="section-lead">
+            「何から決めればいいか分からない」状態でも大丈夫。ヒアリングしながら組み立てます。
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3 class="step-title">ヒアリング</h3>
+              <p class="step-text">目的・ターゲット・競合・掲載したい情報を整理します。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3 class="step-title">構成案（ワイヤー）</h3>
+              <p class="step-text">ページの順番と導線を作り、見せ方を固めます。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3 class="step-title">デザイン → 実装</h3>
+              <p class="step-text">スマホ最適化・読みやすさを重視して仕上げます。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h3 class="step-title">公開・運用</h3>
+              <p class="step-text">更新方法の共有、軽微な修正の相談にも対応します。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-muted" id="about" aria-label="プロフィール">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">プロフィール</h2>
+          <p class="section-lead">
+            “誰が作るのか”は、サイトの信用に直結します。ここは丁寧に盛ります。盛りすぎない範囲で。
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about-avatar" aria-hidden="true"></div>
+          <div class="about-body">
+            <h3 class="about-name">あなたの名前</h3>
+            <p class="about-role">Web制作 / UI設計 / WordPress</p>
+            <p class="about-text">
+              小規模事業者・個人向けに、目的から逆算したWeb制作を行っています。
+              「何を載せればいいか分からない」状態からでも、ヒアリングで言語化し、構成から提案します。
+            </p>
+
+            <dl class="about-meta">
+              <div>
+                <dt>対応</dt>
+                <dd>全国 / オンライン</dd>
+              </div>
+              <div>
+                <dt>得意</dt>
+                <dd>LP / 伝わる文章設計 / スピード実装</dd>
+              </div>
+              <div>
+                <dt>連絡</dt>
+                <dd>24時間以内返信を目標</dd>
+              </div>
+            </dl>
+
+            <div class="about-links" aria-label="外部リンク">
+              <a class="link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="link" href="#" target="_blank" rel="noopener noreferrer">X（旧Twitter）</a>
+              <a class="link" href="#" target="_blank" rel="noopener noreferrer">実績一覧</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-label="お問い合わせ">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">相談・お問い合わせ</h2>
+          <p class="section-lead">
+            まずは「作りたいもの」と「目的」を教えてください。素材が揃ってなくてもOKです。
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">最短で相談する</h3>
+              <p class="card-text">下のどれか1つでOK。あなたがラクな方法で。</p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">メール</span>
+                  <a class="contact-value" href="mailto:your@email.com">your@email.com</a>
+                </li>
+                <li>
+                  <span class="contact-label">X</span>
+                  <a class="contact-value" href="#" target="_blank" rel="noopener noreferrer">@youraccount</a>
+                </li>
+                <li>
+                  <span class="contact-label">フォーム</span>
+                  <a class="contact-value" href="#" target="_blank" rel="noopener noreferrer">Googleフォーム等</a>
+                </li>
+              </ul>
+
+              <p class="note">
+                ※GitHub Pagesはサーバーサイドのフォーム送信ができないので、
+                フォームはGoogleフォームやFormspree等と連携する想定です。
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">相談テンプレ（コピペ用）</h3>
+              <p class="card-text">メッセージはこれだけ埋めればOK。</p>
+
+              <div class="template" role="note" aria-label="相談テンプレート">
+                <p>【目的】（例：問い合わせを増やしたい / 予約を増やしたい）</p>
+                <p>【業種】（例：飲食 / 美容 / 農業 / 士業 など）</p>
+                <p>【希望】（例：LP1枚 / 5ページのサイト / WPで更新したい）</p>
+                <p>【参考サイト】（URLがあれば）</p>
+                <p>【納期】（目安でOK）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-label="最終案内">
+      <div class="container cta-inner">
+        <h2 class="cta-title">“いい感じ”を、ちゃんと成果に。</h2>
+        <p class="cta-text">
+          相談は無料。方向性が固まってなくても、会話しながら整理できます。
+        </p>
+        <a class="btn btn-primary" href="#contact">無料で相談する</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small class="copyright">© <span id="year"></span> あなたの名前</small>
+      <a class="back-to-top" href="#top">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- Minimal JS（メニューと年だけ） -->
+  <script>
+    // 年号
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // モバイルメニュー
+    const btn = document.querySelector(".nav-toggle");
+    const menu = document.getElementById("navMenu");
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        menu.classList.toggle("is-open");
+      });
+    }
+  </script>
+</body>
+</html>
